@@ -12,16 +12,22 @@ export const Header = () => (
 )
 
 export const SSOContainer = (props) => (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-100">
         <Header />
-        <div>
-        <div className="flex flex-col items-center justify-center w-full px-20 border border-gray-100">
+        <div className="flex flex-col items-center justify-center px-20 flex-auto md:w-[550px] w-full" >
             {props.children}
-        </div>
         </div>
     </div>
 )
 
+
+export const SSOBody = (props) => (
+    <div className="border border-slate-100	 shadow-md rounded-md flex flex-col mx-auto w-full overflow-hidden bg-white" >
+        
+        {props.children} 
+             
+    </div>
+)
 
 export const Footer = () => (
     <footer className="flex items-center justify-center w-full h-24 border-t">
