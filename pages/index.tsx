@@ -15,6 +15,7 @@ export default function Home() {
           <G.FormButtomLink left="忘记密码" right="没有账号?" />
         </G.FormContainer>
       </G.SSOBody>
+      <G.Footer></G.Footer>
     </G.SSOContainer >
   );
 }
