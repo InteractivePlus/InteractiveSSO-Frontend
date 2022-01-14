@@ -1,4 +1,4 @@
-import * as G from "./utils";
+import * as G from "./componets/sso";
 
 export default function Home() {
   return (
